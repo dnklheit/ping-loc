@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+
+## Colors
+
+### Primary
+
+- Blue: hsl(223, 87%, 63%)
+
+### Secondary
+
+- Pale Blue: hsl(223, 100%, 88%)
+- Light Red: hsl(354, 100%, 66%)
+
+### Neutral
+
+- Gray: hsl(0, 0%, 59%)
+- Very Dark Blue: hsl(209, 33%, 12%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 20px
+
+### Fonts
+
+- Family: [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin)
+- Weights: 300, 600, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
+
+*/
+
+:root {
+  --blue: hsl(233, 87%, 63%);
+
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Libre Franklin", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 4rem;
+}
+
+.container .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+}
+
+.container .top h2 {
+  margin-bottom: 2.5rem;
+}
+
+.container .top h1 {
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  color: var(--gray);
+}
+
+.container .top h1 span {
+  font-weight: 600 !important;
+  color: var(--very-dark-blue) !important;
+}
+
+.container .top p {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  color: var(--very-dark-blue) !important;
+}
+
+.container .top .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .top .button input {
+  border: 0.5px solid rgb(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  width: 300px;
+}
+
+.container .top .button input:focus {
+  outline: none;
+}
+
+.container .top .button button {
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer !important;
+  padding: 0.95rem 3rem;
+  background-color: var(--blue);
+  margin-left: 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 11.5px;
+}
+
+.container .middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .middle img {
+  display: block;
+  width: 50%;
+}
+
+.container .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.container .bottom p {
+  font-size: 13px;
+  color: var(--very-dark-blue);
+}
+
+.container .bottom .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.container .bottom .social-icons i {
+  color: var(--pale-blue);
+  font-weight: 700;
+  padding: 0.5rem 0.75rem;
+  border-radius: 50%;
+}
+
+.container .bottom .social-icons i:hover {
+  cursor: pointer;
+  background-color: var(--blue);
+  color: white;
+}
